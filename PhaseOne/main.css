@@ -12,11 +12,44 @@ html {
        align-items: center;
        background-color: #6b79ce;
    }
+
+    body {
+    height: 100%; 
+}
+
+    body {
+    display: flex; 
+    justify-content: center;
+}
+
    
    .container {
        background-color: rgb(97, 191, 214); 
        padding: 2rem; 
    }
+   
+   .container {
+    margin-top: 2em; 
+}
+
+    .bg-light {
+    padding: 1em; 
+}
+
+    h1, 
+    h2 {
+    padding: 1em 0; 
+}
+
+    h2 {
+    text-align:center; 
+}
+
+    .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 
    h1 {
        padding: 1.8rem 0; 
@@ -48,3 +81,6 @@ html {
    .btn {
        font-size: 1.8rem; 
    }
+   
+
+
