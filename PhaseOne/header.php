@@ -26,7 +26,7 @@
                     </li> 
                     <!--lab 3 -->
                     <li class="nav-item active">
-                    <a class="nav-link" href="view.php"> Search </a>
+                    <a class="nav-link" href="search.php"> Search </a>
                     </li>
                      <!-- links till need to be done for phase two. this is just a preview :)--> 
                     <li class="nav-item">
