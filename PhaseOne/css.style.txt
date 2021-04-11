@@ -1,0 +1,55 @@
+h1, h4{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+   grid-template-areas:
+   "header header header header"
+   "main main main main"
+   "footer footer footer";
+   grid-template-rows:auto;
+}
+header{
+    /**header css**/
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: maroon;
+    height: 90px;
+    width: 100%;
+
+  }
+  header > nav{
+      /**locating the nav**/
+    display: flex;
+    text-align: center;     
+    align-items: center;
+    min-height: 8vh;
+  }
+  header > nav > ul{ 
+      /**locating the nav > ul**/
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     list-style: none;
+  }
+  header > nav > ul > li{
+    /**short way to do padding**/
+    padding: 0px 10px;
+  }
+  header > nav > ul > li > a{
+   /**the text colour and decoration**/
+    color: #ffffff;
+    text-decoration: none;
+  }
+  header > nav > ul > li:hover > a{
+    /**colour is cyan**/
+    color: #2AF9F6;
+  }
+  .mylogo{
+      /**The logo text is white**/
+      color: white;
+  }
