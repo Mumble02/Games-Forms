@@ -61,7 +61,7 @@
             <div class="col">
               <div class="form-group">
                 <label for="email_confirmation">Email Confirmation:</label>
-                <input class="form-control" type="email" name="email_confirmation" placeholder="herman.munster@mockingbird.com" required value="<?= $form_values['email_confirmation'] ?? null ?>">
+                <input class="form-control" type="email" name="email_confirmation" placeholder="Dory.LightningMcqueen@mockingbird.com" required value="<?= $form_values['email_confirmation'] ?? null ?>">
               </div>
             </div>
           </div>
@@ -91,14 +91,12 @@
         </form>
       </section>
     </div>
-
-    <!-- Add the recaptcha scripts -->
-    <?php include_once('config.php') ?>
-    <script src="https://www.google.com/recaptcha/api.js?render=<?
-    = SITEKEY ?>"></script> 
+  <!-- Add the recaptcha scripts -->
+  <?php include_once('config.php') ?>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?= SITEKEY ?>"></script> 
     <script> 
       grecaptcha.ready(() => { 
-        grecaptcha.execute("<? = SITEKEY ?>", { action: "register" }) 
+        grecaptcha.execute("<?= SITEKEY ?>", { action: "register" }) 
         .then(token => document.querySelector("#recaptchaResponse").value = token) 
         .catch(error => console.error(error)); }); </script>
   </body>

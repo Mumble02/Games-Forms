@@ -52,11 +52,23 @@
               </div>
             </div>
           </div>
+          
+          <!-- Add the recaptcha field -->
+          <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 
           <button class="btn" type="submit">Login</button>
           <a class="btn" href="register.php">Register</a>
         </form>
       </section>
     </div>
+
+      <!-- Add the recaptcha scripts -->
+      <?php include_once('config.php') ?>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?= SITEKEY ?>"></script> 
+    <script> 
+      grecaptcha.ready(() => { 
+        grecaptcha.execute("<?= SITEKEY ?>", { action: "register" }) 
+        .then(token => document.querySelector("#recaptchaResponse").value = token) 
+        .catch(error => console.error(error)); }); </script>
   </body>
 </html>

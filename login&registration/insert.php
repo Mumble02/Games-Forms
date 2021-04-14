@@ -56,7 +56,7 @@
     }
   }
  
-  // Validate the email is in the correct format
+  // Validate the email
   if (!$email) {
     $errors[] = "The email isn't in a valid format.";
   }
@@ -77,7 +77,6 @@
   /* END OF VALIDATION */
  
   /* NORMALIZATION */
-  // Normalize the string fields (convert to lowercase and capitalize the first letter)
  
   // Lowercase the email
   $email = strtolower($email);
@@ -87,7 +86,7 @@
   /* END NORMALIZATION */
  
   /* SANITIZATION */
-  // Sanitize all values on their insertion
+  // Sanitize all values 
   require_once('connect.php');
   $conn = dbo();
   $sql = " INSERT INTO users ( 
