@@ -18,26 +18,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.php"> Login </a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="register.php"> Registry </a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="index.php"> Add games <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="view.php"> View games </a>
                     </li> 
-                    <!--lab 3 -->
                     <li class="nav-item active">
                     <a class="nav-link" href="search.php"> Search </a>
-                    </li>
-                     <!-- links till need to be done for phase two. this is just a preview :)--> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="view.php"> Streamers </a>
-                    </li>        
-                    <li class="nav-item">
-                        <a class="nav-link" href="view.php"> Contact </a>
-                    </li>    
-                    <li class="nav-item">
-                        <a class="nav-link" href="view.php"> Info </a>
-                    </li>            
+                    </li>  
                 </ul>
             </div>
         </nav>

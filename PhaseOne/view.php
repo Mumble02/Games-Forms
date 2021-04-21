@@ -22,8 +22,7 @@
     echo "<table class='table table-striped'><tbody>"; 
 
     foreach($records as $record) {
-        echo"<tr><td>". $record['first_name']. 
-        "</td><td>" . $record['last_name'] . "</td><td>" . $record['genre'] . "</td><td>" . $record['location'] . "</td><td>" . $record['age'] . "</td><td>" . $record['email']. "</td><td>" . $record['favgame']."</td><td><a href='delete.php?id=" . $record['user_id']. "'> Delete Game </a></td><td><a href='index.php?id=" . $record['user_id']. "'>Edit Game </a></td></tr>"; 
+        echo"<tr><td>". $record['first_name']."</td><td>" . $record['last_name'] . "</td><td>" . $record['genre'] . "</td><td>" . $record['location'] . "</td><td>" . $record['age'] . "</td><td>" . $record['email']. "</td><td>" . $record['favgame']."</td><td><a href='delete.php?id=" . $record['user_id']. "'> Delete Game </a></td><td><a href='index.php?id=" . $record['user_id']. "'>Edit Game </a></td></tr>"; 
     }
 
     echo "</tbody></table>"; 
