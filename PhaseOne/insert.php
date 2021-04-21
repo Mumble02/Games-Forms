@@ -88,7 +88,7 @@
   /* SANITIZATION */
   // Sanitize all values 
   require_once('connect.php');
-  //$conn = dbo();
+  $conn = dbo();
   $sql = " INSERT INTO users ( 
     first_name, 
     last_name, 

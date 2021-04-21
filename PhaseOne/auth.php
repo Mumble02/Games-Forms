@@ -2,7 +2,7 @@
  
   // Connect to the database
   require("connect.php");
-  //$conn = dbo();
+  $conn = dbo();
  
   // Create our SQL with an email placeholder
   $sql = "SELECT * FROM users WHERE email = :email";

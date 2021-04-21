@@ -4,7 +4,7 @@
   $email = $_SERVER['PHP_AUTH_USER'] ?? null;
   $password = $_SERVER['PHP_AUTH_PW'] ?? null;
   
-  //$conn = dbo(); 
+  $conn = dbo(); 
   $sql = "SELECT * FROM admins WHERE email = :email";
   $stmt = $conn->prepare($sql);
   $stmt->bindParam(':email', $email, PDO::PARAM_STR);
