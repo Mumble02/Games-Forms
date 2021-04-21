@@ -74,18 +74,6 @@ if(!empty($_GET['id']) && (is_numeric($_GET['id']))) {
             <input type="submit" value="submit" name="submit" class="btn btn-primary">
         </form>
 
-        <!-- Add the recaptcha field -->
-        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-
-           <!-- Add the recaptcha scripts -->
-            <?php include_once('config.php') ?>
-                <script src="https://www.google.com/recaptcha/api.js?render=<?
-                = SITEKEY ?>"></script> 
-        <script> 
-            grecaptcha.ready(() => { 
-                grecaptcha.execute("<? = SITEKEY ?>", { action: "Create games" }) 
-                .then(token => document.querySelector("#recaptchaResponse").value = token) 
-                .catch(error => console.error(error)); }); </script>
-
+      
     </main>
     <?php require('footer.php'); ?>

@@ -7,6 +7,7 @@ try {
     $password = 'pgfGRpjkEl';
     //create instance of PDO object
     $db = new PDO($dsn,$username, $password); 
+    
     echo 'You have connected successfully!'; 
 }
 
