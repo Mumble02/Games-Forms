@@ -10,12 +10,18 @@
 
     //connect to the db 
     require('connect.php');
+    
+    //conn
+    $conn = dbo();
 
     $_SESSION['name'] = $name; 
+
     //create the SQL statement 
     $query = "SELECT title FROM game_names WHERE title LIKE :search_term;"; 
+
     //prepare
-    $stmt = $db->prepare($query); 
+    $stmt = $conn->prepare($query); 
+    
     //bind
     //$stmt->bindParam(':search_term', $search_term);
     $stmt->bindValue(':search_term', '%'.$search_term.'%');

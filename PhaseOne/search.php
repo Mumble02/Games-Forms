@@ -13,14 +13,22 @@
             database and display in the browser */
             //connect to db 
             require('connect.php'); 
+
+            //conn
+            $conn = dbo(); 
+
             //set up SQL query
             $sql = "SELECT title from game_names;"; 
+
             //prepare the query 
-            $statement = $db->prepare($sql); 
+            $statement = $conn->prepare($sql); 
+
             //execute 
             $statement->execute(); 
+
             //fetchALL
             $search_results = $statement->fetchAll(); 
+
             //create a list of results 
             echo "<ul>"; 
             foreach($search_results as $result) {

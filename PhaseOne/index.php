@@ -14,12 +14,19 @@ if(!empty($_GET['id']) && (is_numeric($_GET['id']))) {
     $id = filter_input(INPUT_GET, 'id'); 
     //connect to the databaseS
     require('connect.php'); 
+
+    //conn
+    $conn = dbo(); 
+
     //set up query 
     $sql = "SELECT * FROM games WHERE user_id = :user_id;";
+
     // prepare 
-    $statement = $db->prepare($sql);
+    $statement = $conn->prepare($sql);
+
     //bind 
     $statement->bindParam(':user_id', $id); 
+    
     //execute 
     $statement->execute(); 
 

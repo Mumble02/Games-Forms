@@ -36,6 +36,9 @@
                 //connect to db 
                 require('connect.php');
 
+                //conn
+                $conn = dbo(); 
+
                 //set up SQL query 
 
                 if(!empty($id)) {
@@ -48,7 +51,7 @@
 
 
                 //call the prepare method of the PDO object 
-                $statement = $db->prepare($sql);
+                $statement = $conn->prepare($sql);
 
                 //bind parameters using the bindParam method of the PDO Statement Object 
                 $statement->bindParam(':firstname', $first_name);

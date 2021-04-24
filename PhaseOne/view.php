@@ -4,12 +4,15 @@
     //connect to db 
     require('connect.php'); 
 
+    //conn
+    $conn = dbo(); 
+
     //set up our query 
     $sql = "SELECT * FROM games"; 
 
     //prepare the query 
-
-    $statement = $db->prepare($sql); 
+    $statement = $conn->prepare($sql);
+   
 
     //execute the query 
     $statement->execute(); 

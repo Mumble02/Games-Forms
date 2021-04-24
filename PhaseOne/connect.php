@@ -12,7 +12,7 @@
     //   $username = 'Steph200462383'; 
     //   $password = 'pgfGRpjkEl'; */
       
-     $dsn = 'mysql:host=localhost;dbname=games';
+      $dsn = 'mysql:host=localhost;dbname=games';
       $username = 'root'; 
       $password = '';  
 

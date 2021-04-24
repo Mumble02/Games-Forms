@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <?php include_once('notification.php') ?>
+    <?php //include_once('notification.php') ?>
 
     <div class="container">
       <header class="jumbotron my-5">

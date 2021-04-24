@@ -6,11 +6,14 @@ try {
     //connect to db 
     require('connect.php'); 
 
+    //conn
+    $conn = dbo(); 
+
     //create a query 
     $sql = "DELETE FROM games WHERE user_id = :games_id;"; 
 
     //prepare that query 
-    $statement = $db->prepare($sql); 
+    $statement = $conn->prepare($sql);
 
     //bind 
     $statement->bindParam(':games_id', $games_id); 
