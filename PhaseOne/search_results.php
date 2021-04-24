@@ -30,7 +30,7 @@
     $stmt->execute(); 
 
     echo "<div class='container'>"; 
-    echo "<h1> The following result for your games " . $search_term . " are avaiable</h1>"; 
+    echo "<h1> The following result for your games " . $search_term . " are available</h1>"; 
     echo "<ul>"; 
     
     //if we have a result, display the results 
