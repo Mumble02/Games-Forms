@@ -70,7 +70,7 @@
                 //execute the query 
                 $statement->execute(); 
 
-                //echo '<p> Success, your tune has been added!</p> ';
+                //echo '<p> Success, your game has been added!</p> ';
                 //close DB connection 
                 $statement->closeCursor(); 
                 header('location:view.php');
